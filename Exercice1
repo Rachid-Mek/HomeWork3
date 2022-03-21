@@ -1,0 +1,11 @@
+const equals = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+
+const a = { name: "rachid", age: 26 };
+const b = { name: "rachid", age: 26 };
+
+console.log(equals(a, b));
+
+const c = { name: "rachid" };
+const d = { name: "rachid", age: 20 };
+
+console.log(equals(c, d));
